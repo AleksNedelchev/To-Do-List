@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <title>To Do List</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>To-do List</h1>
+    </header>
+
+    <form id="formInput">
+      <input type="text" id="textInput" />
+
+      <button id="todo-button" type="submit">
+        <i class="fa fa-plus-square" aria-hidden="true"></i>
+      </button>
+
+      <div id="select-div">
+        <select name="todos" id="todo-filter">
+          <option value="all">All</option>
+          <option value="completed">Completed</option>
+          <option value="uncompleted">Uncompleted</option>
+        </select>
+      </div>
+    </form>
+
+    <div id="todo-container">
+      <ul id="todo-list"></ul>
+    </div>
+
+    <script src="/script.js"></script>
+  </body>
+</html>

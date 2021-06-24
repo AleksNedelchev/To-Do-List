@@ -1,0 +1,153 @@
+html {
+  min-height: 100%;
+}
+
+body {
+  background: linear-gradient(
+    125deg,
+    rgba(245, 172, 94, 1) 0%,
+    rgba(246, 255, 180, 1) 100%
+  );
+}
+
+header {
+  text-align: center;
+  margin-top: 150px;
+  color: white;
+  text-shadow: 5px 5px 10px black;
+}
+
+header > h1 {
+  font-size: 50px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+}
+
+#textInput {
+  border: none;
+  height: 40px;
+  width: 300px;
+  font-size: 20px;
+  box-shadow: 5px 5px 10px rgb(124, 84, 38);
+}
+
+#textInput:focus {
+  outline: none;
+}
+
+#todo-button {
+  height: 40px;
+  border: none;
+  background-color: white;
+  box-shadow: 5px 5px 10px rgb(124, 84, 38);
+}
+
+#todo-button {
+  font-size: 20px;
+  color: rgb(255, 123, 0);
+}
+
+#todo-button:hover {
+  color: white;
+  background: rgb(255, 123, 0);
+}
+
+#select-div {
+  position: relative;
+  overflow: hidden;
+  margin-left: 10px;
+  box-shadow: 5px 5px 10px rgb(124, 84, 38);
+}
+
+#select-div::after {
+  content: "\25BC";
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  margin-left: 10px;
+  pointer-events: none;
+  background-color: rgb(255, 123, 0);
+  color: white;
+}
+
+#select-div:hover::after {
+  background-color: white;
+  color: rgb(255, 123, 0);
+}
+
+#todo-filter {
+  border: none;
+  width: 150px;
+  height: 40px;
+  outline: none;
+  color: rgb(219, 106, 0);
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+#todo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#todo-list {
+  min-width: 30%;
+  list-style: none;
+  align-items: center;
+  padding: 0;
+}
+
+.todo-div {
+  margin-bottom: 10px;
+  background: white;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  box-shadow: 5px 5px 10px rgb(124, 84, 38);
+}
+
+.todo-item {
+  flex: 1;
+}
+
+.done-button,
+.delete-button {
+  background: rgb(255, 123, 0);
+  color: white;
+  border: none;
+  padding: 5px;
+}
+.done-button {
+  background: rgb(50, 172, 50);
+}
+
+.done-button:hover,
+.delete-button:hover {
+  opacity: 80%;
+}
+
+.fa {
+  pointer-events: none;
+}
+
+.done {
+  opacity: 50%;
+  text-decoration: line-through;
+  transition: all 0.5s ease;
+}
+
+.fall {
+  transform: translateY(8rem) rotateZ(20deg);
+  opacity: 0;
+  transition: all 0.5s ease;
+}
